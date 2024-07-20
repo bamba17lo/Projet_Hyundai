@@ -28,3 +28,4 @@ C:\Users\Bamba\Formation\ISI\coursC#\Semestre2\Projet_Exam_hyundai\Projet_Exam_h
 C:\Users\Bamba\Formation\ISI\coursC#\Semestre2\Projet_Exam_hyundai\Projet_Exam_hyundai\obj\Debug\net8.0\Projet_Exam_hyundai.pdb
 C:\Users\Bamba\Formation\ISI\coursC#\Semestre2\Projet_Exam_hyundai\Projet_Exam_hyundai\obj\Debug\net8.0\Projet_Exam_hyundai.genruntimeconfig.cache
 C:\Users\Bamba\Formation\ISI\coursC#\Semestre2\Projet_Exam_hyundai\Projet_Exam_hyundai\obj\Debug\net8.0\ref\Projet_Exam_hyundai.dll
+C:\Users\Bamba\Formation\ISI\coursC#\Semestre2\Projet_Exam_hyundai\Projet_Exam_hyundai\obj\Debug\net8.0\Projet_Exam_hyundai.sourcelink.json
