@@ -48,5 +48,27 @@ namespace Projet_Exam_hyundai.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-    }
+        public IActionResult Details(string? model)
+        {
+            if (string.IsNullOrEmpty(model))
+            {
+                return BadRequest("Model parameter cannot be null or empty");
+            }
+
+            switch (model.ToLower())
+            {
+                case "ioniq6":
+                    return View("Ioniq6");
+                case "tucson":
+                    return View("Tucson");
+                case "elantra":
+                    return View("Elantra");
+                case "santafe":
+                    return View("SantaFe");
+                default:
+                    return NotFound();
+            }
+        }
+    
+}
 }

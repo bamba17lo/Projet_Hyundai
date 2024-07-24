@@ -3,7 +3,76 @@
 }
 
 
-<div  class="text-center">
-<p class = "display-4" >Page @ViewData["Title"]</p>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garantie Hyundai</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-</div>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #003768;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .warranty-info {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2em;
+            margin-top: 2em;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .warranty-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            .warranty-list li {
+                margin-bottom: 1em;
+                padding-left: 30px;
+                position: relative;
+            }
+
+                .warranty-list li:before {
+                    content: "✓";
+                    position: absolute;
+                    left: 0;
+                    color: #003768;
+                }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Garantie Hyundai</h1>
+    </header>
+    <div class="container">
+        <div class="warranty-info">
+            <h2>Notre engagement pour votre tranquillité d'esprit</h2>
+            <p>Chez Hyundai, nous sommes fiers de la qualité et de la fiabilité de nos véhicules. C'est pourquoi nous offrons l'une des meilleures garanties de l'industrie.</p>
+            <ul class="warranty-list">
+                <li>Garantie globale limitée de 5 ans/100 000 km</li>
+                <li>Garantie groupe motopropulseur de 5 ans/100 000 km</li>
+                <li>Garantie contre la perforation due à la corrosion de 7 ans/kilométrage illimité</li>
+                <li>Garantie des émissions de 8 ans/130 000 km</li>
+                <li>Assistance routière 24/7 pendant 5 ans/kilométrage illimité</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

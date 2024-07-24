@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\DELL.DESKTOP-99S4A1A\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bamba\\Formation\\ISI\\coursC#\\Semestre2\\Projet_Exam_hyundai\\Projet_Exam_hyundai\\Projet_Exam_hyundai.csproj",
+      "projectUniqueName": "C:\\Users\\DELL.DESKTOP-99S4A1A\\source\\repos\\Projet_Hyundai\\Projet_Exam_hyundai.csproj",
       "projectName": "Projet_Exam_hyundai",
-      "projectPath": "C:\\Users\\Bamba\\Formation\\ISI\\coursC#\\Semestre2\\Projet_Exam_hyundai\\Projet_Exam_hyundai\\Projet_Exam_hyundai.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bamba\\Formation\\ISI\\coursC#\\Semestre2\\Projet_Exam_hyundai\\Projet_Exam_hyundai\\obj\\",
+      "projectPath": "C:\\Users\\DELL.DESKTOP-99S4A1A\\source\\repos\\Projet_Hyundai\\Projet_Exam_hyundai.csproj",
+      "packagesPath": "C:\\Users\\DELL.DESKTOP-99S4A1A\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DELL.DESKTOP-99S4A1A\\source\\repos\\Projet_Hyundai\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL.DESKTOP-99S4A1A\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,6 +28,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -69,7 +70,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

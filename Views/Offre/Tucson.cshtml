@@ -1,0 +1,136 @@
+﻿@{
+    ViewData["Title"] = "Hyundai Tucson - Détails";
+}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 44, 95, 0.7), rgba(0, 44, 95, 0.7)), url('/images/sonata-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .main-content {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            margin-top: -50px;
+        }
+
+        .car-image {
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+            .feature-list li {
+                margin-bottom: 10px;
+                padding-left: 30px;
+                position: relative;
+            }
+
+                .feature-list li:before {
+                    content: "\f058";
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                    position: absolute;
+                    left: 0;
+                    color: #002c5f;
+                }
+
+        .btn-hyundai {
+            background-color: #002c5f;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+            .btn-hyundai:hover {
+                background-color: #00478e;
+                transform: translateY(-3px);
+                box-shadow: 0 5px 15px rgba(0, 44, 95, 0.3);
+            }
+
+        footer {
+            background-color: #002c5f;
+            color: white;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <h1 class="hero-title">Hyundai Tucson</h1>
+    </div>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/images/Hyundai Tucson2.jpg" alt="Hyundai Tucson" class="img-fluid car-image mb-4">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-4">Caractéristiques principales</h2>
+                    <ul class="feature-list">
+                        <li>Moteur : 2.5L 4-cylindres, 191 chevaux</li>
+                        <li>Consommation : 7.2L/100km en ville, 5.9L/100km sur autoroute</li>
+                        <li>Écran tactile 8 pouces avec Apple CarPlay et Android Auto</li>
+                        <li>Système de sécurité avancé Hyundai SmartSense</li>
+                        <li>Sièges avant chauffants et ventilés</li>
+                    </ul>
+                    <h3 class="mt-4 mb-3">Prix à partir de : 29 900 €</h3>
+                    <a href="#" class="btn btn-hyundai">Demander un essai <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+            <div class="mt-5">
+                <h2 class="mb-4">Description détaillée</h2>
+                <p>La Hyundai Sonata 2024 redéfinit l'expérience de conduite dans sa catégorie. Avec son design élégant et aérodynamique, elle attire tous les regards sur la route. L'intérieur spacieux et raffiné offre un confort exceptionnel pour tous les passagers, tandis que les technologies de pointe assurent une connectivité sans faille et une sécurité optimale.</p>
+                <p>Que ce soit pour vos trajets quotidiens ou vos longs voyages, la Sonata vous impressionnera par sa performance équilibrée, son efficacité énergétique et sa conduite souple. Découvrez une berline qui allie parfaitement style, technologie et praticité.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center">
+     
+            <p>&copy; 2024 Hyundai. Tous droits réservés.</p>
+    
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

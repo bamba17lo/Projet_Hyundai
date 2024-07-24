@@ -7,6 +7,38 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Projet_Exam_hyundai.styles.css" asp-append-version="true" />
+    <style>
+
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Assurez-vous que le conteneur prend toute la hauteur de la fenêtre */
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0; /* Ajustez le padding vertical selon vos besoins */
+            overflow-y: auto;
+            min-height: 0; /* Supprimez la hauteur minimale fixe */
+            box-sizing: border-box;
+        }
+
+        .content-wrapper {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+         
+        
+
+        footer {
+            margin-top: auto; /* Pousse le footer vers le bas */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -52,11 +84,7 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 -Hyundai - <a asp-area="" asp-controller="Home" asp-action="Home">Accueil</a>
-        </div>
-    </footer>
+   
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
