@@ -1,9 +1,156 @@
 ﻿@{
-    ViewData["Title"] = "A Propos";
+    ViewData["Title"] = "À Propos de Hyundai Sénégal";
 }
 
+<style>
+    .hero-section {
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('@Url.Content("~/images/Call-Centre_1kolom_1120x600.jpg")');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 200px 0; /* Augmenté de 100px à 200px */
+        text-align: center;
+        height: 80vh; /* Ajout d'une hauteur de 80% de la hauteur de la fenêtre */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-<div  class="text-center">
-<p class = "display-4" >Page @ViewData["Title"]</p>
+    .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
 
+    .hero-section h1 {
+        font-size: 3.5rem; /* Augmentation de la taille du titre */
+        margin-bottom: 20px;
+    }
+
+    .hero-section p {
+        font-size: 1.5rem; /* Augmentation de la taille du sous-titre */
+    }
+
+    .card-custom {
+        border: none;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+    }
+
+        .card-custom:hover {
+            transform: translateY(-5px);
+        }
+
+    .icon-box {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #002c5f; /* Hyundai blue */
+    }
+
+    .btn-hyundai {
+        background-color: #002c5f;
+        color: white;
+        padding: 10px 25px;
+    }
+
+        .btn-hyundai:hover {
+            background-color: #00458e;
+            color: white;
+        }
+
+    body {
+        height: 2000px;
+    }
+</style>
+
+<div class="hero-section">
+    <div class="container">
+        <h1 class="display-4">Bienvenue chez Hyundai Sénégal</h1>
+        <p class="lead">Votre partenaire de confiance depuis 2016</p>
+    </div>
 </div>
+
+<section class="section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Notre Histoire</h2>
+                <p>Depuis le 1er juin 2016, Caetano est fier d'être le représentant officiel et exclusif de Hyundai au Sénégal. Notre mission est de fournir des véhicules de qualité et un service exceptionnel à tous nos clients.</p>
+            </div>
+            <div class="col-md-6">
+                <h2>Notre Engagement</h2>
+                <p>Chez Hyundai Sénégal, nous nous engageons à :</p>
+                <ul>
+                    <li>Écouter attentivement nos clients</li>
+                    <li>Offrir un environnement accueillant</li>
+                    <li>Fournir un service professionnel</li>
+                    <li>Proposer des solutions adaptées</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="text-center mb-5">Pourquoi Choisir Hyundai Sénégal ?</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card card-custom h-100">
+                    <div class="card-body text-center">
+                        <div class="icon-box">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h5 class="card-title">Large Gamme de Véhicules</h5>
+                        <p class="card-text">Des berlines élégantes aux SUV robustes, nous avons le véhicule parfait pour vous.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card card-custom h-100">
+                    <div class="card-body text-center">
+                        <div class="icon-box">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h5 class="card-title">Service Après-Vente de Qualité</h5>
+                        <p class="card-text">Notre équipe d'experts est là pour maintenir votre Hyundai en parfait état.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card card-custom h-100">
+                    <div class="card-body text-center">
+                        <div class="icon-box">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h5 class="card-title">Solutions Flexibles</h5>
+                        <p class="card-text">De l'achat à la location longue durée, nous avons des options pour tous les besoins.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Nos Services</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h4><i class="fas fa-briefcase mr-2"></i> Solutions Entreprises</h4>
+                <p>Des offres spéciales pour les flottes et des solutions adaptées aux besoins de votre entreprise.</p>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h4><i class="fas fa-calendar-alt mr-2"></i> Location Longue Durée</h4>
+                <p>Profitez de votre Hyundai sans immobiliser le capital de votre entreprise grâce à notre service de renting.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container text-center">
+        <h2 class="mb-4">Prêt à Découvrir l'Univers Hyundai ?</h2>
+        <p class="mb-4">Venez nous rencontrer et trouvez le véhicule de vos rêves.</p>
+        <a href="@Url.Action("Details", "Offre", new { model = "contact" })" class="btn btn-hyundai btn-lg">Contactez-nous</a>
+    </div>
+</section>

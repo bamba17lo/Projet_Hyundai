@@ -7,44 +7,41 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Projet_Exam_hyundai.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-
-
-        .container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Assurez-vous que le conteneur prend toute la hauteur de la fenêtre */
+        .footer {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0; /* Reduced padding */
         }
 
-        main {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            padding: 20px 0; /* Ajustez le padding vertical selon vos besoins */
-            overflow-y: auto;
-            min-height: 0; /* Supprimez la hauteur minimale fixe */
-            box-sizing: border-box;
-        }
+            .footer a {
+                color: #fff;
+                text-decoration: none;
+            }
 
-        .content-wrapper {
-            flex: 1;
-            padding: 20px;
-            overflow-y: auto;
-        }
-         
-        
+                .footer a:hover {
+                    text-decoration: underline;
+                }
 
-        footer {
-            margin-top: auto; /* Pousse le footer vers le bas */
-        }
+            .footer .social-icons a {
+                margin-right: 15px;
+                font-size: 1.2em;
+            }
+
+            .footer .footer-bottom {
+                padding-top: 10px; /* Reduced padding */
+                border-top: 1px solid #444;
+                margin-top: 10px; /* Reduced margin */
+                text-align: center;
+            }
     </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Logo</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><<img src="https://hyundai.sn/wp-content/uploads/sites/9/2021/09/MicrosoftTeams-image-233.png" alt="Alternate Text" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -57,37 +54,54 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Offre" asp-action="Offre">Offre</a>
                         </li>
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Entreprise">Entreprise</a>
                         </li>
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Garantie">Garantie</a>
                         </li>
-                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Service">Service Aprés-Vente</a>
-                        </li>
-                         <li class="nav-item">
+                      
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Propos">Qui sommes-nous</a>
                         </li>
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Nouvelle">Nouvelles</a>
                         </li>
-
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="container-fluid px-0 d-flex flex-column min-vh-100">
+        <!-- Ensure the body stretches to full height -->
+        <main role="main" class="flex-grow-1">
+            <!-- Allow the main content to grow and fill available space -->
             @RenderBody()
         </main>
     </div>
-
-   
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+               
+                <div class="col-md-6">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 Hyundai - <a asp-area="" asp-controller="Home" asp-action="Home">Accueil</a>
+            </div>
+        </div>
+    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- For Font Awesome icons -->
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

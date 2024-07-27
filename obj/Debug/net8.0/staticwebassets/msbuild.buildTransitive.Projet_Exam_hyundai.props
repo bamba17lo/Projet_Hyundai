@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Projet_Exam_hyundai.props" />
-</Project>

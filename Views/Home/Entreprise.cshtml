@@ -2,8 +2,97 @@
     ViewData["Title"] = "Entreprise";
 }
 
+<style>
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: start;
+    }
+   
 
-<div  class="text-center">
-<p class = "display-4" >Page @ViewData["Title"]</p>
+    .text-content {
+        max-width: 90%;
+        width: 100%;
+    }
 
+        .text-content p {
+            margin: 0 auto;
+        }
+
+    .custom-card {
+        background-color: beige; /* Light gray background */
+        border: 1px solid beige; /* Border color */
+        border-radius: 0.25rem; /* Border radius */
+        padding: 1rem; /* Padding inside the card */
+    }
+
+    .card {
+        margin-bottom: 20rem;
+    }
+</style>
+
+<div class="container-fluid px-0">
+    <div class="content-container">
+        <h3 class="text-center display-5">Page @ViewData["Title"]</h3>
+        <img src="https://hyundai.sn/wp-content/themes/hyundai_senegal/images/topo-hyundaisn.jpg" class="img-fluid" alt="Alternate Text" /><br />
+        <div class="text-content">
+            <p class="text-start">
+                Caetano est le représentant officiel de la marque Hyundai au Sénégal depuis le 1er juin 2016 (date à laquelle cette entité du groupe Salvador Caetano) a été désignée par Hyundai, pour commercialiser la marque : à titre exclusif.<br />
+                L’objectif majeur de l’entreprise est d’assurer une satisfaction à tous ses clients et ses partenaires.<br />
+                De ce fait, elle saura vous apporter toute l’expertise nécessaire, afin que vous puissiez prendre les meilleures décisions lors de l’achat d’un véhicule.<br />
+                Hyundai Sénégal vous propose ainsi une large gamme de voitures robustes, très modernes, dotées d’équipements de qualité (berlines, SUV, 4x4 …) afin de répondre au mieux à vos besoins.
+            </p>
+            <center><a class="btn btn-primary" href="#">Plus d'info</a></center>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6 align-items-center">
+                        <h3>Quels sont les avantages d’être clients chez Hyundai ?</h3>
+                        <ol>
+                            <li>Bénéficier de conditions spéciales pour les flottes</li>
+                            <li>Adhérer aux meilleures offres du marché pour les véhicules neufs</li>
+                            <li>Avoir des solutions adaptées aux besoins de votre entreprise</li>
+                            <li>Souscrire au service de location longue durée (Renting) destiné</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                        <img src="https://hyundai.sn/wp-content/themes/hyundai_senegal/images/01.jpg" class="img-fluid" alt="Placeholder Image">
+                    </div>
+                </div>
+                <br /><br />
+                <div class="row">
+                    <div class="col-md-6 align-items-center">
+                        <img src="https://hyundai.sn/wp-content/themes/hyundai_senegal/images/02.jpg" class="img-fluid" alt="Placeholder Image">
+                        <h3>Location Longue Durée</h3>
+                        <p>Vous pourrez ainsi profiter tout pleinement de votre Hyundai sans avoir la nécessité d’immobiliser le capital de votre entreprise. Grâce au partenariat avec Caetano Renting Sénégal, nous vous proposons la meilleure solution de location sur mesure pour votre entreprise.</p>
+                    </div>
+                    <div class="col-md-6 align-items-center">
+                        <img src="https://hyundai.sn/wp-content/themes/hyundai_senegal/images/04.jpg" class="img-fluid" alt="Placeholder Image">
+                        <h3>Solutions de financement</h3>
+                        <p>Hyundai propose un ensemble de solutions adaptées aux besoins de votre entreprise. N’hésitez pas à nous solliciter pour la cotation d’un véhicule Hyundai.</p>
+                    </div>
+                </div><br />
+            </div>
+        </div>
+        <div class="container-fluid px-0">
+            <!-- Use container-fluid for full width and remove padding -->
+            <div class="card ">
+                <div class="card-body custom-card">
+                    <center><h5 class="card-title">Notre Engagement</h5></center>
+                    <ul class="">
+                        <li class="mb-2">Écouter attentivement et suivre activement les demandes de nos clients</li>
+                        <li class="mb-2">Maintenir un environnement propre, sûr et accueillant pour tout le monde</li>
+                        <li class="mb-2">S’organiser au mieux dans nos planifications</li>
+                        <li class="mb-2">Faire preuve de cordialité et de professionnalisme à l’endroit des clients</li>
+                        <li class="mb-2">Transmettre un budget dans les meilleurs délais</li>
+                    </ul>
+                </div>
+                <center class="m-10">
+                    <h2>Offres exclusives pour votre entreprise</h2>
+                    <p>Connaissez-vous déjà nos offres promotionnelles ? Nous vous garantissons les meilleures offres du marché pour les véhicules neufs.</p>
+                </center>
+            </div>
+
+        </div>
+    </div>
 </div>

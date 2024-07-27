@@ -65,10 +65,15 @@ namespace Projet_Exam_hyundai.Controllers
                     return View("Elantra");
                 case "santafe":
                     return View("SantaFe");
+                case "sonata":
+                    return View("Sonata");
+                case "konaelectric":
+                    return View("KonaElectric");
                 default:
                     return NotFound();
             }
         }
-    
-}
+   
+
+    }
 }

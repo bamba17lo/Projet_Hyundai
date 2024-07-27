@@ -27,6 +27,8 @@ namespace Projet_Exam_hyundai.Controllers
                     return View("Elantra");
                 case "santafe":
                     return View("SantaFe");
+                case "contact":
+                    return View("Contact");
                 default:
                     return NotFound();
             }

@@ -1,5 +1,118 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyundai Sonata - Intérieur</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .page-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .image-container {
+            width: 100%;
+            height: 90vh;
+            overflow: hidden;
+        }
+
+        .background-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+
+        body {
+            height: 1800px;
+        }
+
+        h1, h2 {
+            color: #003768;
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        h1 {
+            font-size: 1.8em;
+        }
+
+        h2 {
+            font-size: 1.2em;
+        }
+
+        p {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .details {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .detail-item {
+            background-color: rgba(248, 248, 248, 0.8);
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: calc(50% - 20px);
+            min-width: 200px;
+        }
+
+            .detail-item h3 {
+                color: #003768;
+                margin-top: 0;
+                font-size: 1em;
+            }
+
+            .detail-item p {
+                font-size: 0.9em;
+                text-align: left;
+            }
+
+        .back-button {
+            display: block;
+            width: 200px;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #003768;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="image-container">
+            <img src="@Url.Content("~/images/kona1.jpg")" alt="Intérieur Hyundai Sonata" class="background-image">
+        </div>
+        <div class="content">
+            <h1> Hyundai Kona Electric </h1>
+            <h2>Un Autre Niveau de Sportivité et Sophistication</h2>
+            <p>Les détails orientés vers le confort de l'intérieur raffiné ajoutent une touche haut de gamme au design distinctif de la Hyundai Sonata.</p>
+            <div class="details">
+                <!-- Les div detail-item restent inchangées -->
+            </div>
+            <a href="@Url.Action("Nouvelle", "Home")" class="back-button">Retour aux nouveautés</a>
+        </div>
+    </div>
+</body>
+</html>

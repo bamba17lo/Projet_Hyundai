@@ -38,11 +38,14 @@ button.accept-policy {
   font-size: 1rem;
   line-height: inherit;
 }
-
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 20px; /* Augmenté à 20px */
+    font-size: 0.7rem; /* Augmenté à 0.7rem */
+    padding: 1px 0; /* Ajout d'un peu d'espacement vertical */
+    height: auto; /* Hauteur automatique au lieu d'une hauteur fixe */
+    opacity: 0.8; /* Un peu moins transparent */
 }

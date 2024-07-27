@@ -2,6 +2,169 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Page Accueil</h1>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body, html {
+        font-family: Arial, sans-serif;
+    }
+
+    .slider {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .mySlides {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+        .mySlides:first-child {
+            display: block;
+        }
+
+    .content {
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .image-grid-item {
+        text-align: center;
+    }
+
+    .image-grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    .car-name {
+        margin-top: 10px;
+    }
+
+    .car-name {
+        margin-top: 10px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .card {
+        background-color: #001f3f;
+        color: white;
+        padding: 50px;
+        border-radius: 10px;
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+
+        .card:hover {
+            background-color: #007bff;
+        }
+</style>
+
+<div class="slider">
+    <img class="mySlides" src="https://hyundai.sn/wp-content/uploads/sites/9/2024/07/Banner-HP-Hyundai-Desktop-1920x845-6.webp">
+    <img class="mySlides" src="https://hyundai.sn/wp-content/uploads/sites/9/2024/07/SN2312_05-Tucson-KSP-WebsiteHyundai-Desktop_updated.webp">
+    <img class="mySlides" src="https://hyundai.sn/wp-content/uploads/sites/9/2024/04/SN-Palisade-KSP_WebsiteHyundai-Desktop.webp">
 </div>
+
+
+<div class="content">
+    <h2><b>Gamme</b></h2>
+    <div class="image-grid">
+        <div class="image-grid-item">
+            <img src="https://hyundai.sn/wp-content/uploads/sites/9/2021/04/nouvelle_santafe_thumbnail.png" alt="Car 1">
+            <div class="car-name">Nouvelle SANTA</div>
+        </div>
+        <div class="image-grid-item">
+            <img src="https://hyundai.sn/wp-content/uploads/sites/9/2023/03/KE-Staria_Thumbnail.webp" alt="Car 2">
+            <div class="car-name">STARIA</div>
+        </div>
+        <div class="image-grid-item">
+            <img src="https://hyundai.sn/wp-content/uploads/sites/9/2022/12/thumbnail_tucson.webp" alt="Car 3">
+            <div class="car-name">TUCSON</div>
+        </div>
+        <div class="image-grid-item">
+            <img src="https://hyundai.sn/wp-content/uploads/sites/9/2023/01/Thumbnail_260x140.png" alt="Car 4">
+            <div class="car-name">Nouvelle Hyundai</div>
+        </div>
+        <div class="image-grid-item">
+            <img src="https://hyundai.sn/wp-content/uploads/sites/9/2022/12/thumbnail_sonata.webp" alt="Car 5">
+            <div class="car-name">SONATA</div>
+        </div>
+        <div class="image-grid-item">
+            <img src="https://hyundai.sn/wp-content/uploads/sites/9/2023/05/Thumbnail-Palisade_260x254.png" alt="Car 6">
+            <div class="car-name">PALISADE</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="card-container">
+            <div class="card">
+                <i class="fas fa-car"></i>
+                Demandez un essai
+            </div>
+            <div class="card">
+                <i class="fas fa-file-alt"></i>
+                Demandez un devis
+            </div>
+            <div class="card">
+                <i class="fas fa-book"></i>
+                eBrochure
+            </div>
+            <div class="card">
+                <i class="fas fa-calendar-check"></i>
+                Réservez un Entretien
+            </div>
+        </div>
+        <div class="info-section">
+            <h2>Bienvenue chez Hyundai Sénégal</h2>
+            <p>Vente de voitures au Sénégal</p>
+            <p>À la recherche de voitures Hyundai à Dakar ? Découvrez vos voitures SUV familiales, citadines et utilitaires pour achat à Dakar avec Caetano. Connaissez le website auto au Sénégal de Hyundai Motor.</p>
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+    </div>
+
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+</script>
